@@ -1,12 +1,20 @@
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background-color: #282c34;
   height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  font-size: calc(10px + 2vmin);
+  animation: App-logo-spin infinite 2s linear;
+  font-size: calc(20px + 2vmin);
   color: white;
 }
 

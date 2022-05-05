@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
+import { Skin } from './Skin/Skin';
+
 
 function App() {
   return (
     <div className="App">
-      <h1 className="App-logo">
-       Backendless
-      </h1>
+      <Skin />
     </div>
   );
 }

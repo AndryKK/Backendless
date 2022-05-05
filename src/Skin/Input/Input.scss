@@ -1,0 +1,22 @@
+.input {
+  display: flex;
+  &__text {
+    color: #fff;
+    margin-right: 25px;
+    text-align: center;
+  }
+
+  &__xValues {
+    border: 3px solid #fff;
+    border-radius: 15px;
+    background-color: #c5f1b2;
+    text-align: center;
+  }
+
+  &__yValues {
+    border: 3px solid #fff;
+    border-radius: 15px;
+    background-color: #c5f1b2;
+    text-align: center;
+  }
+}

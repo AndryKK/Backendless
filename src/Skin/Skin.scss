@@ -1,0 +1,28 @@
+.Skin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: min-content;
+  width: 60vh;
+  gap: 20px;
+  border: 5px solid #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: blue;
+
+  &__diagram {
+    display: flex;
+    align-items: center;
+    background-color: #c5f1b2;
+    padding: 20px;
+    height: min-content;
+    width: 90%;
+    border: 3px solid #fff;
+    border-radius: 15px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 20px;
+  }
+}

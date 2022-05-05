@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./Skin.scss"
-import { Chart } from '../Chart/Chart';
+import { ChartJSComponent } from '../Chart/ChartJSComponent';
 import { Button } from './Button/Button';
 import { Input } from './Input/Input';
 
@@ -9,7 +9,7 @@ export function Skin() {
   const [labels, setLabels] = useState<string[]>(['X, Y, Z'])
   const [data, setData] = useState<string[]>(['100, 200, 150'])
 
-  const optionsView = ['Bar', 'Liner', 'Radar', 'Doughnut']
+  const optionsView = ['Bar', 'Liner', 'Scatter', 'Doughnut']
 
   const hendelChoose = (param: string) => {
     setShowas(param)
@@ -59,7 +59,7 @@ export function Skin() {
      selected by coord parameter */}
 
       <div className="Skin__diagram">
-        <Chart 
+        <ChartJSComponent 
           labels={labels} 
           dataIn={data}
           showAs={showAs}

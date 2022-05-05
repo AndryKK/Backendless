@@ -6,11 +6,11 @@ import './Button.scss'
 
 export const Button = ({ hendelChoose, showAs, kind }: HendelChoose & ShowAs & Kind) => {
   return (
-    <label htmlFor="button" className="text">
+    <label htmlFor={kind} className="text">
       {kind}
       <input
         onChange={() => hendelChoose(kind)}
-        id="button" type="radio"
+        id={kind} type="radio"
         checked={showAs === kind} />
     </label>
   );
